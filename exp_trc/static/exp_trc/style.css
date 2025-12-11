@@ -1,0 +1,11 @@
+/* exp_trc/static/exp_trc/style.css */
+table, th, td {
+    border: 1px solid rgb(2, 2, 2);
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    background-color: #7d8887;
+}

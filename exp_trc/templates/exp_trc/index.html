@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{% static 'exp_trc/style.css' %}">
+</head>
+<body>
+    <h1>EXPENSE TRACKER</h1>
+    <table>
+        <tr>
+            <th> Name </th>
+            <th> Amount </th>
+            <th>  Date </th>
+            
+        </tr>
+    {% for expense in expenses %}
+    <tr> 
+        <td>{{expense.name}}</td> 
+        <td>RS{{expense.amount}}</td>
+        <td>{{expense.date_added|date:"M j,Y"}}</td> 
+    </tr>
+    {%empty%}
+    <tr>
+        <td colspan="3">There are no expenses</td>
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
