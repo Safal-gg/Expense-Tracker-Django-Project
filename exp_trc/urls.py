@@ -7,4 +7,5 @@ app_name='exp_trc'
 urlpatterns=[
 
     path('',views.index,name='index'),
+    path('new_expense/',views.create_expense,name='new'),
 ]
