@@ -11,13 +11,15 @@
             <th> Name </th>
             <th> Amount </th>
             <th>  Date </th>
-            
+            <th> Action </th>
         </tr>
     {% for expense in expenses %}
     <tr> 
-        <td>{{expense.name}}</td> 
+        <td><a href="{%url 'exp_trc:read_expense' expense.id%}">{{expense.name}}</a></td> 
         <td>RS{{expense.amount}}</td>
         <td>{{expense.date_added|date:"M j,Y"}}</td> 
+        <td> <a href="{%url 'exp_trc:update_expense' expense.id%}">edit</a>
+        <a href="{%url 'exp_trc:delete_expense' expense.id%}">delete</a></td>
     </tr>
     {%empty%}
     <tr>
