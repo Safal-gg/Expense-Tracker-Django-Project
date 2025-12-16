@@ -1,0 +1,24 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------
+# Virtual Environment
+# ----------------------
+env/
+venv/
+.venv/
+
+# ----------------------
+# Django
+# ----------------------
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Django secret stuff
+.env
