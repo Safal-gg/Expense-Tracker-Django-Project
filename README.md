@@ -14,3 +14,13 @@ A simple and beginner-friendly **Expense Tracker** application that helps users 
 - Clean and simple user interface
 
 ---
+
+## How to run locally
+1. Clone the repo
+2. Create a virtual environment: `python -m venv venv`
+3. Activate the environment: 
+   - Windows: `venv\Scripts\activate`
+   - Mac/Linux: `source venv/bin/activate`
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run migrations: `python manage.py migrate`
+6. Start the server: `python manage.py runserver`
